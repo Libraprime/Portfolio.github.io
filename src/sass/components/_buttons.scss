@@ -21,6 +21,23 @@
   }
 }
 
+.cta-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+
+  @include respond(phone) {
+    justify-content: center;
+  }
+
+  .cta-btn {
+    margin: 0;
+    text-align: center;
+  }
+}
+
 /* Hero Style */
 .cta-btn--hero {
   @include supportColorForIE11();
